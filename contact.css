@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(53, 29, 75);
+  font-family: "popins", sans-serif;
+  box-sizing: border-box;
+}
+
+#navheadsection {
+  background-color: rgb(43, 43, 94);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 13vh;
+  text-transform: capitalize;
+  color: whitesmoke;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+nav ul li a:hover {
+  color: rgb(226, 64, 226);
+}
+div span {
+  font-size: 2rem;
+}
+#nav-icon {
+  display: none;
+}
+#nav-icon i {
+  font-size: 30px;
+}
+main {
+  min-height: 60vh;
+}
+.form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 90vh;
+}
+.text,
+.form-start {
+  width: 40%;
+}
+.text h1,
+p {
+  text-transform: capitalize;
+  font-weight: lighter;
+  color: white;
+}
+
+.text p {
+  line-height: 25px;
+  padding-top: 10px;
+  text-transform: initial;
+}
+.contact-icons i {
+  font-size: 1.3rem;
+  outline: 1px solid white;
+  border-radius: 20%;
+  padding: 8px;
+  margin: 25px 5px;
+  background-color: rgb(250, 242, 242);
+}
+.contact-icons i:hover {
+  background-color: rgba(88, 62, 62, 0);
+}
+.form-start form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: start; */
+  gap: 20px;
+}
+.form-start h2 {
+  color: rgba(128, 128, 128, 0.945);
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.form-start hr {
+  width: 100px;
+  background-color: gray;
+  height: 3px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: none;
+}
+.input-field {
+  width: 20vw;
+  height: 5vh;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+}
+.input-field:focus {
+  border: 2px solid rgb(143, 71, 71);
+}
+.input-field::placeholder {
+  color: gray;
+  text-transform: capitalize;
+}
+.form-start textarea {
+  border-radius: 20px;
+  height: 140px;
+  padding-top: 15px;
+}
+.form-start form button {
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 15px 30px;
+  color: white;
+  font-size: 16px;
+  border-radius: 50px;
+  gap: 10px;
+  background-image: linear-gradient(270deg, #ff994f, #fa6dfa);
+  cursor: pointer;
+  width: 120px;
+}
+footer {
+  min-height: 20vh;
+  /* background-color:#5e6472; */
+  background-color: #1e2433;
+}
+.foot {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-nav ul {
+  list-style: none;
+  padding-top: 5px;
+}
+.footer-nav p {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin-top: 15px;
+  font-family: Verdana, Tahoma, sans-serif;
+  color: violet;
+}
+.footer-nav ul li {
+  padding-top: 15px;
+  border-bottom: 1px solid rgba(189, 148, 148, 0.288);
+}
+.footer-nav ul li a {
+  text-decoration: none;
+  text-decoration: none;
+  color: whitesmoke;
+  text-transform: capitalize;
+}
+.footer-nav ul li a:hover {
+  color: rgb(226, 64, 226);
+}
+
+.footer-links i {
+  font-size: 1.3rem;
+  outline: 1px solid white;
+  border-radius: 50%;
+  padding: 8px;
+  margin: 15px 5px 2px 5px;
+  background-color: rgb(70, 33, 33);
+  color: violet;
+}
+.footer-links {
+  margin-top: 15px;
+}
+.footer-links p {
+  color: #fdfffc;
+}
+.footer-links i:hover {
+  background-color: rgb(255, 247, 247);
+}
+footer hr {
+  border: none;
+  margin: 20px 195px;
+  width: 70%;
+  height: 1.2px;
+  background: gainsboro;
+}
+.copyright p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #ffffffc7;
+}
+/* for mobile screen */
+@media only screen and (max-width: 768px) {
+  div span {
+    font-size: 1.3rem;
+  }
+
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    left: 0px;
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+    background-color: rgb(43 43 94 / 55%);
+    display: none;
+  }
+  nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid rgb(30, 97, 128);
+  }
+  #nav-icon {
+    display: block;
+    margin-left: 100px;
+  }
+
+  .form {
+    display: inline-block;
+  }
+  .text,
+  .form-start {
+    width: 90%;
+  }
+  .input-field {
+    width: 80vw;
+  }
+  .form{
+    margin: 20px 0px 20px 30px;
+  }
+  .footer-nav p {
+    font-size: 1rem;
+  }
+  .footer-links i {
+    font-size: 1rem;
+    margin: 7px 5px;
+  }
+  footer hr {
+    border: none;
+    margin: 40px 60px;
+    width: 70%;
+    height: 1.2px;
+    background: gainsboro;
+  }
+  .copyright p {
+    font-size: 1rem;
+  }
+}
