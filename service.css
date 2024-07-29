@@ -19,7 +19,14 @@ body {
   font-size: 1.2rem;
   position: relative;
 }
-
+.logo-of-website {
+  height: 10vh;
+  border-radius: 10px;
+}
+.span {
+  font-size: 1.6rem;
+  margin-left: 100px;
+}
 nav ul {
   display: flex;
   justify-content: space-between;
@@ -58,7 +65,7 @@ p {
 }
 main h2 {
   padding-top: 30px;
-  color: gray;
+  color: limegreen;
 }
 .service {
   display: flex;
@@ -72,6 +79,7 @@ main h2 {
   width: 28vw;
   color: white;
   text-align: center;
+
 }
 .service-div i {
   border: 1px solid whitesmoke;
@@ -88,13 +96,13 @@ main h2 {
   line-height: 30px;
   font-weight: light;
   color: gainsboro;
+  
 }
  .github{
      margin-right: 20px;
  }
 footer {
   min-height: 20vh;
-  /* background-color:#5e6472; */
   background-color: #1e2433;
 }
 .foot {
@@ -161,7 +169,15 @@ footer hr {
   div span {
     font-size: 1.3rem;
   }
-
+  .span {
+    font-size: 1.1rem;
+    margin-left: 10px;
+  }
+  .logo-of-website {
+    margin-left: 10px;
+    height: 8vh;
+    border-radius: 5px;
+  }
   nav ul {
     position: absolute;
     right: 0;
@@ -179,7 +195,7 @@ footer hr {
   }
   #nav-icon {
     display: block;
-    margin-left: 100px;
+    margin-left: 20px;
   }
   main p {
  font-size: 0.8rem;

@@ -19,7 +19,14 @@ body {
   font-size: 1.2rem;
   position: relative;
 }
-
+.logo-of-website {
+  height: 10vh;
+  border-radius: 10px;
+}
+.span {
+  font-size: 1.6rem;
+  margin-left: 100px;
+}
 nav ul {
   display: flex;
   justify-content: space-between;
@@ -205,7 +212,15 @@ footer hr {
   div span {
     font-size: 1.3rem;
   }
-
+  .span {
+    font-size: 1.1rem;
+    margin-left: 30px;
+  }
+  .logo-of-website {
+    margin-left: 10px;
+    height: 8vh;
+    border-radius: 5px;
+  }
   nav ul {
     position: absolute;
     right: 0;
@@ -223,7 +238,7 @@ footer hr {
   }
   #nav-icon {
     display: block;
-    margin-left: 100px;
+    margin-left: 20px;
   }
 
   .form {

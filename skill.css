@@ -19,7 +19,14 @@ body {
   font-size: 1.2rem;
   position: relative;
 }
-
+.logo-of-website {
+  height: 10vh;
+  border-radius: 10px;
+}
+.span {
+  font-size: 1.6rem;
+  margin-left: 100px;
+}
 nav ul {
   display: flex;
   justify-content: space-between;
@@ -49,57 +56,70 @@ main {
   min-height: 100vh;
   background-color: #2124376e;
 }
-
-.skill{
+.my-skill-section h3 {
+  text-align: center;
+  color: rgba(255, 250, 245, 0.863);
+  text-transform: capitalize;
+  font-style: italic;
+  font-weight: lighter;
+  padding: 30px;
+  font-size: 2rem;
+}
+.my-skill-section h3 span {
+  color: orange;
+}
+.skills {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.skills div {
+  width: 25%;
+  height: 30vh;
+  background-color: #191b2769;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: whitesmoke;
+}
+.skills div:hover {
+  background-color: rgba(0, 255, 255, 0.199);
+}
+.my-skill-section .descripton {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-#skills .des-about-skill {
-  width: 45%;
-  margin-top: 30px;
+.des,
+.img {
+  width: 40%;
 }
-.des-about-skill h3 {
-  text-align: justify;
-  padding: 10px;
-  font-weight: light;
-  font-family: "popins", sans-serif;
-  font-style: italic;
-  color: rgba(240, 255, 255, 0.747);
-}
-.des-about-skill .skill-des{
-  color:  white;
-  line-height: 30px;
-  font-size: 1.3rem;
-
-}
-.c-s, .s-s{
-  color:  rgb(106 136 207);
-  padding-top: 10px;
-}
-.brief-dis ul{
-  color: whitesmoke;
-  line-height: 30px;
-}
-.my-img-skill {
-  width: 45%;
-}
-.my-img-skill img {
-  width: 45vw;
+.img img {
   height: 60vh;
-  object-fit: cover;
-  /* border-radius: 55% 45% 46% 54% / 77% 61% 39% 23%; */
-  margin-top: 30px;
-
-  border-radius: 50px;
-background: #55858b;
-box-shadow:  -9px -9px 18px #3e6165,
-             9px 9px 18px #6ca9b1;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 20px;
 }
+.des h2 {
+  color: orange;
+  padding: 5px;
+}
+.des p {
+  color: rgb(238, 235, 235);
+  line-height: 25px;
+}
+.des ul {
+  color: #cad2c5;
+  line-height: 25px;
+}
+
 footer {
   min-height: 20vh;
-  /* background-color:#5e6472; */
-  background-color: #1e2433;
 }
 .foot {
   display: flex;
@@ -146,7 +166,7 @@ footer {
 .footer-links i:hover {
   background-color: rgb(255, 247, 247);
 }
-.footer-links{
+.footer-links {
   margin-top: 15px;
 }
 footer hr {
@@ -166,7 +186,15 @@ footer hr {
   div span {
     font-size: 1.3rem;
   }
-
+  .span {
+    font-size: 1.1rem;
+    margin-left: 10px;
+  }
+  .logo-of-website {
+    margin-left: 10px;
+    height: 8vh;
+    border-radius: 5px;
+  }
   nav ul {
     position: absolute;
     right: 0;
@@ -176,7 +204,6 @@ footer hr {
     text-align: center;
     gap: 0;
     background-color: rgb(43 43 94 / 55%);
-    min-height: 55vh;
     display: none;
   }
   nav ul li {
@@ -185,19 +212,41 @@ footer hr {
   }
   #nav-icon {
     display: block;
-    margin-left: 100px;
+    margin-left: 20px;
   }
-  .skill{
+  .skill {
     display: inline-block;
-   }
-   #skills .des-about-skill {
+  }
+  #skills .des-about-skill {
     width: 85%;
     padding: 20px;
   }
   .my-img-skill img {
     width: 75vw;
-    margin: 5px 0px 25px 50px;
-
+    margin: 5px 0px 25px 45px;
+    height: 40vh;
+    border-radius: 30%;
+  }
+  .skills div {
+    width: 45%;
+    height: 20vh;
+    font-size: 2rem;
+  }
+  .my-skill-section h3 {
+    font-size: 1.5rem;
+  }
+  .my-skill-section .descripton {
+    display: inline-block;
+  }
+  .des,
+  .img {
+    width: 82%;
+  }
+  .img img {
+    margin-left: 30px;
+  }
+  .des {
+    padding: 25px;
   }
   .footer-nav p {
     font-size: 1rem;

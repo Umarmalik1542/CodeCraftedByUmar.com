@@ -19,7 +19,14 @@ body {
   font-size: 1.2rem;
   position: relative;
 }
-
+.logo-of-website {
+  height: 10vh;
+  border-radius: 10px;
+}
+.span {
+  font-size: 1.6rem;
+  margin-left: 100px;
+}
 nav ul {
   display: flex;
   justify-content: space-between;
@@ -44,7 +51,7 @@ div span {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 80px 0;
+  margin: 10px 0;
   min-height: 50vh;
 }
 .left {
@@ -114,6 +121,7 @@ main .skils-section {
   text-transform: capitalize;
   padding-top: 20px;
   font-style: italic;
+  color: rgb(255, 123, 0);
 }
 
 .decripton h3 {
@@ -144,12 +152,13 @@ main .service-section span {
   font-weight: lighter;
   font-style: italic;
   text-transform: capitalize;
+  color: rgb(255, 123, 0);
+  margin-top: 50px;
 }
 .service {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 50px;
 }
 .service-des {
   width: 40%;
@@ -167,6 +176,7 @@ main .service-section span {
 .service-img {
   width: 45%;
   margin-bottom: 20px;
+  object-fit: contain;
 }
 .service-img img {
   height: 60vh;
@@ -174,10 +184,46 @@ main .service-section span {
   margin-top: 10px;
   border-radius: 30px;
 }
+.my-projects {
+  min-height: 40vh;
+  width: 100%;
+  background-color: whitesmoke;
+}
+.my-projects h2 {
+  text-align: center;
+  color: rgb(255, 123, 0);
+  font-size: 2rem;
+  text-transform: capitalize;
+  padding: 25px;
+  font-style: italic;
+}
+.project {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+}
+.project div {
+  width: 35%;
+  height: 30vh;
+  background-color: #232121db;
+  color: #f7feff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: lowercase;
+  border-radius: 20px;
+}
+.project div span {
+  color: orange;
+  text-transform: capitalize;
+  padding: 4px;
+}
 
 footer {
   min-height: 20vh;
-  /* background-color:#5e6472; */
   background-color: #1e2433;
 }
 .foot {
@@ -219,7 +265,7 @@ footer {
   background-color: rgb(70, 33, 33);
   color: violet;
 }
-.footer-links{
+.footer-links {
   margin-top: 15px;
 }
 .footer-links p {
@@ -245,7 +291,6 @@ footer hr {
 }
 #nav-icon i {
   font-size: 30px;
-  
 }
 
 /* for mobile screen */
@@ -271,15 +316,24 @@ footer hr {
   }
   #nav-icon {
     display: block;
-    margin-left: 100px;
+    margin-left: 20px;
+  }
+  .span {
+    font-size: 1.1rem;
+    margin-left: 10px;
+  }
+  .logo-of-website {
+    margin-left: 10px;
+    height: 8vh;
+    border-radius: 5px;
   }
   .md-main {
     display: inline-block;
-    margin: 50px 0;
+    margin: 50px 0px;
     min-height: 30vh;
   }
   .left {
-    margin-left: 50px;
+    margin-left: 20px;
     font-size: 1.5rem;
     color: aqua;
     font-family: "popins", sans-serif;
@@ -293,20 +347,19 @@ footer hr {
     font-size: 0.8rem;
     outline: 1px solid white;
     border-radius: 20%;
-    padding: 8px;
     margin: 15px 6px;
     background-color: rgb(250, 242, 242);
     text-align: center;
   }
 
   .right img {
-    margin: 30px 30px 0px 35px;
+    margin: 20px;
     height: 50vh;
-    width:90%;
+    width: 90%;
   }
   main hr {
     border: none;
-    margin: 20px 70px;
+    margin: 20px 50px;
     width: 70%;
     height: 1.2px;
     background: gainsboro;
@@ -322,10 +375,11 @@ footer hr {
   }
   .decripton h3 {
     text-align: justify;
-    padding-top: 20px;
+    padding-top: 10px;
   }
   .decripton .skill-des {
-    padding: 10px;
+    text-align: center;
+    padding: 5px;
     line-height: 35px;
     color: rgb(49, 25, 71);
     font-style: italic;
@@ -340,15 +394,15 @@ footer hr {
     object-fit: contain;
     margin-top: 0px;
     border-radius: 40px;
-    margin-left: 25px;
+    margin-left: 20px;
   }
   .service {
     display: inline-block;
     margin-top: 30px;
   }
   .service-des {
-    width: 94%;
-    padding: 10px;
+    width: 90%;
+    padding: 15px;
     line-height: 37px;
     margin-bottom: 20px;
   }
@@ -358,14 +412,13 @@ footer hr {
   }
   .service-img {
     width: 92%;
-    margin-bottom: 20px;
-  }
-  .service-img img {
-    height: 58vh;
-    width: 100%;
-    margin-top: 0;
+    margin-left: 25px;
+    background-color: #dfe3ee83;
     border-radius: 30px;
-    margin-left: 23px;
+  }
+  .project div {
+    width: 100%;
+    height: 35vh;
   }
   .footer-nav p {
     font-size: 1rem;
