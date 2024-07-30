@@ -224,12 +224,12 @@ footer hr {
   nav ul {
     position: absolute;
     right: 0;
-    top: 60px;
+    top: 65px;
     left: 0px;
     flex-direction: column;
     text-align: center;
     gap: 0;
-    background-color: rgb(43 43 94 / 55%);
+    background-color: rgba(43, 43, 94, 0.842);
     display: none;
   }
   nav ul li {
