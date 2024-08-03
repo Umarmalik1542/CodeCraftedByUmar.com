@@ -207,8 +207,43 @@ footer hr {
   font-size: 1.1rem;
   color: #ffffffc7;
 }
+/* for tablet screen */
+@media only screen and (min-width: 700px) and (max-width: 1023px) {
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 65px;
+    left: 0px;
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+    background-color: rgba(43, 43, 94, 0.842);
+    display: none;
+  }
+  nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid rgb(30, 97, 128);
+  }
+  #nav-icon {
+    display: block;
+    margin-left: 0px;
+  }
+  .span {
+    font-size: 1.5rem;
+    margin-left: 0px;
+  }
+  .logo-of-website {
+    margin-left: 0px;
+    height: 8vh;
+    border-radius: 5px;
+  }
+  footer hr {
+    width: 75%;
+    margin: 25px 100px;
+    }
+}
 /* for mobile screen */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 700px) {
   div span {
     font-size: 1.3rem;
   }

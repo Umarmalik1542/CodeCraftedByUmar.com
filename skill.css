@@ -171,9 +171,9 @@ footer {
 }
 footer hr {
   border: none;
-  margin: 20px 195px;
-  width: 70%;
-  height: 1.2px;
+  margin: 20px 195px 20px 195px;
+  width: 50%;
+  height: 1.1px;
   background: gainsboro;
 }
 .copyright p {
@@ -181,8 +181,62 @@ footer hr {
   font-size: 1.1rem;
   color: #ffffffc7;
 }
+/* for tablet screen */
+
+@media only screen and (min-width: 700px) and (max-width: 1023px) {
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 65px;
+    left: 0px;
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+    background-color: rgba(43, 43, 94, 0.842);
+    display: none;
+  }
+  nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid rgb(30, 97, 128);
+  }
+  #nav-icon {
+    display: block;
+    margin-left: 0px;
+  }
+  .span {
+    font-size: 1.5rem;
+    margin-left: 0px;
+  }
+  .logo-of-website {
+    margin-left: 0px;
+    height: 8vh;
+    border-radius: 5px;
+  }
+  .my-skill-section .descripton {
+    display: inline-block;
+  }
+  .des,
+  .img {
+    width: 90%;
+  }
+  .img img {
+    height: 80vh;
+    width: 100%;
+    border-radius: 10%;
+    }
+  .des {
+    padding: 0px 25px 25px 25px;
+  }
+}
+.footer-links i {
+  margin: 5px 5px;
+}
+footer hr {
+  margin: 40px 130px;
+  width: 75%;
+}
 /* for mobile screen */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 700px) {
   div span {
     font-size: 1.3rem;
   }
@@ -198,7 +252,7 @@ footer hr {
   nav ul {
     position: absolute;
     right: 0;
-    top: 60px;
+    top: 65px;
     left: 0px;
     flex-direction: column;
     text-align: center;
@@ -245,6 +299,7 @@ footer hr {
   .img img {
     margin-left: 30px;
   }
+
   .des {
     padding: 25px;
   }
